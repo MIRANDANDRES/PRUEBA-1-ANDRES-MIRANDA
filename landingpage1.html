@@ -3,33 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página</title>
+    <title>Symphony of Coffee - El arte en cada taza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Bienvenido a mi sitio web</h1>
-    </header>
-
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Contacto</a>
+    <nav class="navbar">
+        <div class="logo">Aroma<span>Café</span></div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Origen</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#metodos">Métodos</a>
+            <a href="#contacto" class="btn-primary">Contacto</a>
+        </div>
     </nav>
 
+    <header id="inicio" class="hero" style="background-image: linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)), url('assets/hero_coffee_1775495557278.png');">
+        <div class="hero-content">
+            <h1>El despertar de los sentidos</h1>
+            <p>Descubre el fascinante mundo del café: desde su origen legendario hasta el arte de su preparación perfecta en cada taza.</p>
+            <a href="#historia" class="btn-hero">Explorar</a>
+        </div>
+    </header>
+
     <main>
-        <section>
-            <h2>Sección principal</h2>
-            <p>Este es un párrafo de ejemplo.</p>
+        <!-- Introducción -->
+        <section id="historia" class="section layout-split">
+            <div class="split-content">
+                <h2 class="section-title">El Origen Dorado</h2>
+                <div class="line"></div>
+                <p>Cuenta la leyenda que en las altas mesetas de Etiopía, un joven pastor llamado Kaldi notó que sus cabras se llenaban de una energía vibrante tras comer unas misteriosas cerezas rojas. Desde esos lejanos y míticos inicios, el café emprendió un viaje milenario que lo llevaría de los confines de Arabia hasta Europa, para luego conquistar todas las mesas del mundo.</p>
+                <p>Hoy no es solo una bebida; es una cultura profunda, un arte perfeccionado y la chispa irremplazable que enciende las mañanas de millones de personas.</p>
+            </div>
+            <div class="split-image">
+                <img src="assets/arabica_coffee_1775495577624.png" alt="Cerezas rojas de café en la plantación">
+            </div>
+        </section>
+
+        <!-- Tipos de café -->
+        <section id="tipos" class="section bg-light">
+            <div class="container center-text">
+                <h2 class="section-title">Las Dos Estrellas del Mundo</h2>
+                <div class="line center-line"></div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <i class="fa-solid fa-leaf card-icon"></i>
+                        <h3>Arábica</h3>
+                        <p>Considerado el más exquisito, representa alrededor del 60% de la producción mundial. Ofrece sabores complejos, con delicadas notas dulces, afrutadas o florales. Posee un menor contenido de cafeína y una acidez equilibrada en el paladar.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-bolt card-icon"></i>
+                        <h3>Robusta</h3>
+                        <p>Cultivado en altitudes menores, tiene una resistencia excepcional y el doble de cafeína que el arábica. Su sabor es más fuerte, amargo y terroso. Es el ingrediente perfecto para aportar la icónica "crema" al espresso.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-seedling card-icon"></i>
+                        <h3>Otras Variedades</h3>
+                        <p>Las variedades exóticas como Libérica y Excelsa, aunque menos comunes, ofrecen perfiles de sabor completamente distintos y complejos, aportando diversidad y un carácter ahumado a las mezclas gourmet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Procesos de producción -->
+        <section id="proceso" class="section">
+            <div class="container">
+                <h2 class="section-title center-text">Del Campo a tu Taza</h2>
+                <div class="line center-line"></div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content">
+                            <h3>Cultivo y Cuidados</h3>
+                            <p>El cafeto necesita entre 3 a 4 años para dar sus primeros frutos dorados. Se cultiva exclusivamente en el "Cinturón del Café", la zona ecuatorial que ofrece las condiciones exactas de clima, humedad y altitud.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content">
+                            <h3>Recolección</h3>
+                            <p>Las cerezas maduras se recolectan, en muchos casos, a mano (método de picking). Este minucioso trabajo asegura que solo los frutos en su punto ideal de dulzor pasen a la siguiente etapa.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content">
+                            <h3>Beneficio y Secado</h3>
+                            <p>Se extrae el grano de la fruta mediante métodos húmedos o procesos naturales. Posteriormente, el grano se seca al sol en amplios patios o elevadas camas africanas para alcanzar la humedad óptima.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content">
+                            <h3>El Tueste Maestro</h3>
+                            <p>El grano verde cobra vida al ser transformado por el calor. Aquí, los tostadores desarrollan la sinfonía de aromas y sabores: tuestes claros resaltan la acidez brillante, mientras los oscuros potencian el cuerpo robusto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Métodos de preparación -->
+        <section id="metodos" class="section bg-image" style="background-image: linear-gradient(rgba(26, 15, 10, 0.9), rgba(26, 15, 10, 0.9)), url('assets/espresso_shot_1775495661055.png'); color: white;">
+            <div class="container center-text">
+                <h2 class="section-title" style="color: white;">Rituales de Preparación</h2>
+                <div class="line center-line" style="background-color: #C48B71;"></div>
+                <p style="margin-bottom: 2rem; opacity: 0.9; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">Cada método es un universo, extrayendo diferentes matices y aceites del grano para brindarte una experiencia sensorial única.</p>
+                <div class="metodos-grid">
+                    <div class="metodo-item">
+                        <h4><i class="fa-solid fa-mug-hot"></i> Espresso</h4>
+                        <p>Agua a 9 bares de presión a través de café finamente molido. Un elixir intenso, denso y coronado por su característica "crema" dorada.</p>
+                    </div>
+                    <div class="metodo-item">
+                        <h4><i class="fa-solid fa-flask"></i> Prensa Francesa</h4>
+                        <p>Inmersión total. Café de molienda gruesa mezclado lentamente con agua caliente, resultando en una bebida con gran cuerpo y retención de aceites.</p>
+                    </div>
+                    <div class="metodo-item">
+                        <h4><i class="fa-solid fa-filter"></i> V60 / Filtrado</h4>
+                        <p>Método de vertido manual "Pour-over". Ofrece un perfil increíblemente limpio y claro que resalta a la perfección las notas sutiles y florales.</p>
+                    </div>
+                    <div class="metodo-item">
+                        <h4><i class="fa-solid fa-fire-burner"></i> Moka Italiana</h4>
+                        <p>Preparación clásica en estufa. El vapor presurizado empuja el agua hacia arriba a través del café, logrando una extracción fuerte y tradicional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios y Curiosidades -->
+        <section id="beneficios" class="section">
+            <div class="container">
+                <div class="beneficios-wrapper">
+                    <div class="beneficios-text">
+                        <h2 class="section-title">Salud Integral en Cada Gota</h2>
+                        <div class="line"></div>
+                        <ul class="benefits-list">
+                            <li><i class="fa-solid fa-check"></i> <strong>Escudo celular:</strong> Rico en polifenoles y antioxidantes comprobados que protegen tus células del envejecimiento.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Poder mental:</strong> La cafeína estimula los neurotransmisores, incrementando la concentración, la memoria y el estado de alerta general.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Motor físico:</strong> Puede acelerar significativamente el metabolismo y mejorar el rendimiento deportivo.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Bienestar social:</strong> Más allá de lo físico, la cultura del café fomenta la conexión humana, la conversación y reduce los niveles de estrés.</li>
+                        </ul>
+                    </div>
+                    <div class="curiosity-box">
+                        <h3>¿Sabías qué?</h3>
+                        <p>El café es considerado el segundo producto básico más comercializado en el mundo entero, únicamente superado por el petróleo. ¡Aproximadamente se consumen más de 2 billones de tazas al día alrededor del globo, convirtiéndolo en un lenguaje verdaderamente universal!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="section call-to-action">
+            <div class="container center-text">
+                <h2 class="section-title">¿Listo para encontrar tu taza perfecta?</h2>
+                <div class="line center-line"></div>
+                <p>Suscríbete a nuestro boletín para recibir de primera mano los mejores granos de nuestro tostador maestro, directo a la puerta de tu hogar.</p>
+                <form class="contact-form">
+                    <input type="email" placeholder="Ingresa tu correo electrónico..." required>
+                    <button type="submit">Únete a la Experiencia</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Mi página web</p>
+        <div class="footer-content">
+            <div class="footer-logo">Aroma<span>Café</span></div>
+            <p>© 2026 Brayan Guncay. Diseñado con pasión por el código y el buen café.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
-
-    <hr
-        <h1>Brayan Guncay</h1>
 
 </body>
 </html>
